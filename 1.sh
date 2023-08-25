@@ -32,6 +32,10 @@ print_time ()
 echo "time is":`date`
 }
 
+backup (){
+tar -cvzf /tmp/1.tgz .
+}
+
 
 # Main : Where the key program runs
 echo "hello world"
@@ -39,4 +43,5 @@ echo "...."
 print_directory
 echo "...."
 upload_git
+backup
 
