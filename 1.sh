@@ -38,4 +38,5 @@ echo "...."
 print_directory
 echo "...."
 print_time
+echo "...."
 
