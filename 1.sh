@@ -9,6 +9,7 @@
 
 # Declare my variables.
 dir1=/private/tmp
+dte=`date +"%Y-%m-%d_%H-%M-%S"`
 
 # Functions : Are modules which achive a small result
 
@@ -35,13 +36,14 @@ echo "time is":`date`
 backup (){
 if [ -f "/tmp/1.tgz" ];then
  rm -f /tmp/1.tgz
- echo "removed the file /tmp/1.tmp"
+ echo "removed the file /tmp/$dte.tgz"
 fi
-tar -cvzf /tmp/1.tgz .
+tar -cvzf /tmp/$dte.tgz .
 }
 
 
 # Main : Where the key program runs
+backup
 echo "hello world"
 echo "...."
 print_directory
