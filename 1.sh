@@ -8,13 +8,13 @@
 
 
 # Declare my variables.
-
+dir1=/private/tmp
 
 # Functions : Are modules which achive a small result
 
 print_directory ()
 {
-  ls -l /private/tmp
+  ls -l $dir1
 }
 
 
@@ -22,7 +22,7 @@ upload_git ()
 {
 # this function uploads the current folder into git
 git add .
-git comment "update 1"
+git commit -m "update 1"
 git push
 }
 
@@ -39,4 +39,5 @@ print_directory
 echo "...."
 print_time
 echo "...."
+upload_git
 
