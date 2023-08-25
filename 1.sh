@@ -33,6 +33,10 @@ echo "time is":`date`
 }
 
 backup (){
+if [-f /tmp/1.tgz ];then
+ rm -f /tmp/1.tgz
+ echo "removed the file /tmp/1.tmp"
+fi
 tar -cvzf /tmp/1.tgz .
 }
 
