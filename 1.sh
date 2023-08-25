@@ -15,6 +15,7 @@ dir1=/private/tmp
 print_directory ()
 {
   ls -l $dir1
+  print_time
 }
 
 
@@ -36,8 +37,6 @@ echo "time is":`date`
 echo "hello world"
 echo "...."
 print_directory
-echo "...."
-print_time
 echo "...."
 upload_git
 
