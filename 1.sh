@@ -11,7 +11,7 @@
 dir1=/private/tmp
 dte=`date +"%Y-%m-%d_%H-%M-%S"`
 
-# Functions : Are modules which achive a small result
+# Functions : Are modules which archive a small result
 
 print_directory ()
 {
