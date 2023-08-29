@@ -47,6 +47,12 @@ help() {
 }
 
 ######### Main : Where the key program runs ###########
+## $0 : current command
+## $1 : first parameter
+## $2 : second parameter
+## $3 : third parameter
+
+
 if [ $# -lt 1 ]
 then
         help
