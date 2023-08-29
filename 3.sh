@@ -33,7 +33,7 @@ print_time ()
 echo "time is":`date`
 }
 
-backup (){
+backup_tmp (){
 if [ -f "/tmp/1.tgz" ];then
  rm -f /tmp/1.tgz
  echo "removed the file /tmp/$dte.tgz"
@@ -53,7 +53,7 @@ help() {
 ## $3 : third parameter
 
 
-if [ $# -lt 1 ]
+if [ $# -lt 2 ]
 then
         help
         exit
@@ -62,7 +62,7 @@ fi
 case "$1" in
 
 -b)  echo "Backing up directory"
-    backup 
+    backup_tmp
     ;;
 -d)  echo  "printing direcrory /tmp"
     print_directory
@@ -75,10 +75,10 @@ case "$1" in
    ;;
 esac
 
-case "$3" in
+case "$2" in
 
 -b)  echo "Backing up directory"
-    backup 
+    backup_tmp
     ;;
 -d)  echo  "printing direcrory /tmp"
     print_directory
@@ -90,3 +90,4 @@ case "$3" in
    help
    ;;
 esac
+
