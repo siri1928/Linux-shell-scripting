@@ -75,3 +75,18 @@ case "$1" in
    ;;
 esac
 
+case "$3" in
+
+-b)  echo "Backing up directory"
+    backup 
+    ;;
+-d)  echo  "printing direcrory /tmp"
+    print_directory
+    ;;
+-g)  echo  "uploading content to git"
+    upload_git
+    ;;
+*) echo "command not found"
+   help
+   ;;
+esac
