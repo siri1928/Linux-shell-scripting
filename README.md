@@ -3,15 +3,15 @@
 1.sh : simple script..
 
 
-Things to follow through.
+# Things to follow through.
 
-Cotnainers : 
+## Containers : 
 - Install Linux VM (Free version on Azure) : Use Debian 11.
    https://www.learningjournal.guru/courses/modern-web-development/core-concepts/free-vm-in-azure/
 - Install Docker and get familar with docker commands 
   https://www.fosslinux.com/49959/install-docker-on-debian.htm
 - To check if docker is installed.
-   # docker ps 
+   docker ps 
    CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 - Few thing to know about docker
    - Download a application.
@@ -20,14 +20,14 @@ Cotnainers :
 - Dockerfile where you can turn your application into a docker-container.
 
 
-Networking :
+## Networking :
 - install dnsutils, net-tools
 - learn how to use "ip" "ifconfig" "route" "nslookup" "dig" command
 
-Security Tools:
+## Security Tools:
 - nMAP using to scan network and tell you what ports are open.
 
-Shell Scripting.
+###Shell Scripting.
 1) 
  - Write a shell script.
    - install docker
