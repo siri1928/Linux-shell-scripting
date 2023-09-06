@@ -27,6 +27,10 @@
 ## Security Tools:
 - nMAP using to scan network and tell you what ports are open.
 
+```bash
+  nmap -sP 192.168.68.10
+```
+
 ###Shell Scripting.
 1) 
  - Write a shell script.
