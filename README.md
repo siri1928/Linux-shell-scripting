@@ -31,9 +31,9 @@
   nmap -sP 192.168.68.10
 ```
 
-###Shell Scripting.
-1) 
- - Write a shell script.
+### Shell Scripting.
+
+- Write a shell script.
    - install docker
    - download a sample helloworld container and run it.
    - verify if you script is able to check if docker is running.
